@@ -1,0 +1,29 @@
+{
+    "name": "ianriizky/moslempray",
+    "description": "API Manager to find pray time for Moslem developed for PHP and Laravel Framework",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ianriizky",
+            "email": "ian.rizkypratama@gmail.com"
+        }
+    ],
+    "keywords": [
+        "moslem pray",
+        "waktu sholat",
+        "laravel",
+        "php"
+    ],
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Ianrizky\\MoslemPray\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
