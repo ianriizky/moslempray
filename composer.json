@@ -17,8 +17,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "spatie/laravel-enum": "^2.4",
-        "illuminate/http": "^8.36"
+        "illuminate/http": "^8.36",
+        "spatie/data-transfer-object": "^2.8",
+        "illuminate/support": "^8.36"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.5",
