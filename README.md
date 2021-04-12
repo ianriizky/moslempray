@@ -1,5 +1,8 @@
 # ianriizky-moslempray
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ianriizky/moslempray.svg?style=flat-square)](https://packagist.org/packages/ianriizky/moslempray)
+[![Total Downloads](https://img.shields.io/packagist/dt/ianriizky/moslempray.svg?style=flat-square)](https://packagist.org/packages/ianriizky/moslempray)
+
 ianriizky-moslempray is a API Manager to find pray time for Moslem developed for PHP and Laravel Framework.
 
 There are 3 driver that available to use so far:
