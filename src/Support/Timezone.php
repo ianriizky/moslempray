@@ -7,6 +7,14 @@ use Illuminate\Support\Str;
 
 class Timezone
 {
+
+    /**
+     * Collection cache.
+     *
+     * @var \Illuminate\Support\Collection
+     */
+    protected static $cache;
+
     /**
      * Return collection of city with its timezone value.
      *
@@ -14,6 +22,10 @@ class Timezone
      */
     public static function collection(): Collection
     {
+        if (!is_null(static::$cache)) {
+            return static::$cache;
+        }
+
         $collection = [];
 
         $handle = fopen('storage/timezone.ndjson', 'r');
@@ -22,7 +34,7 @@ class Timezone
             $collection[] = json_decode($line, true);
         }
 
-        return Collection::make($collection);
+        return static::$cache = Collection::make($collection);
     }
 
     /**
