@@ -1,0 +1,511 @@
+{ "city": "aceh barat", "timezone": "Asia/Jakarta" }
+{ "city": "aceh barat daya", "timezone": "Asia/Jakarta" }
+{ "city": "aceh besar", "timezone": "Asia/Jakarta" }
+{ "city": "aceh jaya", "timezone": "Asia/Jakarta" }
+{ "city": "aceh selatan", "timezone": "Asia/Jakarta" }
+{ "city": "aceh singkil", "timezone": "Asia/Jakarta" }
+{ "city": "aceh tamiang", "timezone": "Asia/Jakarta" }
+{ "city": "aceh tengah", "timezone": "Asia/Jakarta" }
+{ "city": "aceh tenggara", "timezone": "Asia/Jakarta" }
+{ "city": "aceh timur", "timezone": "Asia/Jakarta" }
+{ "city": "aceh utara", "timezone": "Asia/Jakarta" }
+{ "city": "agam", "timezone": "Asia/Jakarta" }
+{ "city": "alor", "timezone": "Asia/Makassar" }
+{ "city": "asahan", "timezone": "Asia/Jakarta" }
+{ "city": "asmat", "timezone": "Asia/Jayapura" }
+{ "city": "badung", "timezone": "Asia/Makassar" }
+{ "city": "balangan", "timezone": "Asia/Makassar" }
+{ "city": "bandung", "timezone": "Asia/Jakarta" }
+{ "city": "bandung barat", "timezone": "Asia/Jakarta" }
+{ "city": "banggai", "timezone": "Asia/Makassar" }
+{ "city": "banggai kepulauan", "timezone": "Asia/Makassar" }
+{ "city": "banggai laut", "timezone": "Asia/Makassar" }
+{ "city": "bangka", "timezone": "Asia/Jakarta" }
+{ "city": "bangka barat", "timezone": "Asia/Jakarta" }
+{ "city": "bangka selatan", "timezone": "Asia/Jakarta" }
+{ "city": "bangka tengah", "timezone": "Asia/Jakarta" }
+{ "city": "bangkalan", "timezone": "Asia/Jakarta" }
+{ "city": "banglio", "timezone": "Asia/Jakarta" }
+{ "city": "banjar", "timezone": "Asia/Calcutta" }
+{ "city": "banjarnegara", "timezone": "Asia/Jakarta" }
+{ "city": "bantaeng", "timezone": "Asia/Makassar" }
+{ "city": "bantul", "timezone": "Asia/Jakarta" }
+{ "city": "banyuasin", "timezone": "Asia/Jakarta" }
+{ "city": "banyumas", "timezone": "Asia/Jakarta" }
+{ "city": "banyuwangi", "timezone": "Asia/Jakarta" }
+{ "city": "barito selatan", "timezone": "Asia/Pontianak" }
+{ "city": "barito timur", "timezone": "Asia/Pontianak" }
+{ "city": "barito utara", "timezone": "Asia/Pontianak" }
+{ "city": "baritokuala", "timezone": "Asia/Makassar" }
+{ "city": "barru", "timezone": "Asia/Makassar" }
+{ "city": "batang", "timezone": "Asia/Jakarta" }
+{ "city": "batanghari", "timezone": "Asia/Jakarta" }
+{ "city": "batubara", "timezone": "Asia/Jakarta" }
+{ "city": "bekasi", "timezone": "Asia/Jakarta" }
+{ "city": "belitung", "timezone": "Asia/Jakarta" }
+{ "city": "belitung timur", "timezone": "Asia/Jakarta" }
+{ "city": "belu", "timezone": "Asia/Makassar" }
+{ "city": "bener meriah", "timezone": "Asia/Jakarta" }
+{ "city": "bengkalis", "timezone": "Asia/Jakarta" }
+{ "city": "bengkayang", "timezone": "Asia/Jakarta" }
+{ "city": "bengkulu selatan", "timezone": "Asia/Jakarta" }
+{ "city": "bengkulu tengah", "timezone": "Asia/Jakarta" }
+{ "city": "bengkulu utara", "timezone": "Asia/Jakarta" }
+{ "city": "berau", "timezone": "Asia/Makassar" }
+{ "city": "biaknumfor", "timezone": "Asia/Jayapura" }
+{ "city": "bima", "timezone": "Asia/Makassar" }
+{ "city": "bintan", "timezone": "Asia/Jakarta" }
+{ "city": "bireuen", "timezone": "Asia/Jakarta" }
+{ "city": "blitar", "timezone": "Asia/Jakarta" }
+{ "city": "blora", "timezone": "Asia/Jakarta" }
+{ "city": "boalemo", "timezone": "Asia/Makassar" }
+{ "city": "bogor", "timezone": "Asia/Jakarta" }
+{ "city": "bojonegoro", "timezone": "Asia/Jakarta" }
+{ "city": "bolaangmongondow", "timezone": "Asia/Makassar" }
+{ "city": "bolaangmongondow selatan", "timezone": "Asia/Makassar" }
+{ "city": "bolaangmongondow timur", "timezone": "Asia/Makassar" }
+{ "city": "bolaangmongondow utara", "timezone": "Asia/Makassar" }
+{ "city": "bombana", "timezone": "Asia/Makassar" }
+{ "city": "bondowoso", "timezone": "Asia/Jakarta" }
+{ "city": "bone", "timezone": "Asia/Makassar" }
+{ "city": "bonebolango", "timezone": "Asia/Makassar" }
+{ "city": "bovendigoel", "timezone": "Asia/Jayapura" }
+{ "city": "boyolali", "timezone": "Asia/Jakarta" }
+{ "city": "brebes", "timezone": "Asia/Jakarta" }
+{ "city": "buleleng", "timezone": "Asia/Makassar" }
+{ "city": "bulukumba", "timezone": "Asia/Makassar" }
+{ "city": "bulungan", "timezone": "Asia/Makassar" }
+{ "city": "bungo", "timezone": "Asia/Jakarta" }
+{ "city": "buol", "timezone": "Asia/Makassar" }
+{ "city": "buru", "timezone": "Asia/Jayapura" }
+{ "city": "buru selatan", "timezone": "Asia/Jayapura" }
+{ "city": "buton", "timezone": "Asia/Makassar" }
+{ "city": "buton utara", "timezone": "Asia/Makassar" }
+{ "city": "ciamis", "timezone": "Asia/Jakarta" }
+{ "city": "cianjur", "timezone": "Asia/Jakarta" }
+{ "city": "cilacap", "timezone": "Asia/Jakarta" }
+{ "city": "cirebon", "timezone": "Asia/Jakarta" }
+{ "city": "dairi", "timezone": "Asia/Jakarta" }
+{ "city": "deiyai", "timezone": "Asia/Jayapura" }
+{ "city": "deliserdang", "timezone": "Asia/Jakarta" }
+{ "city": "demak", "timezone": "Asia/Jakarta" }
+{ "city": "dharmasraya", "timezone": "Asia/Jakarta" }
+{ "city": "dogiyai", "timezone": "Asia/Jayapura" }
+{ "city": "dompu", "timezone": "Asia/Makassar" }
+{ "city": "donggala", "timezone": "Asia/Makassar" }
+{ "city": "empat lawang", "timezone": "Asia/Jakarta" }
+{ "city": "ende", "timezone": "Asia/Makassar" }
+{ "city": "enrekang", "timezone": "Asia/Makassar" }
+{ "city": "fak-fak", "timezone": "Asia/Jayapura" }
+{ "city": "flores timur", "timezone": "Asia/Makassar" }
+{ "city": "garut", "timezone": "Asia/Jakarta" }
+{ "city": "gayolues", "timezone": "Asia/Jakarta" }
+{ "city": "gianyar", "timezone": "Asia/Makassar" }
+{ "city": "gorontalo", "timezone": "Asia/Makassar" }
+{ "city": "gorontalo utara", "timezone": "Asia/Makassar" }
+{ "city": "gowa", "timezone": "Asia/Makassar" }
+{ "city": "gresik", "timezone": "Asia/Jakarta" }
+{ "city": "grobogan", "timezone": "Asia/Jakarta" }
+{ "city": "gunungkidul", "timezone": "Asia/Jakarta" }
+{ "city": "gunungmas", "timezone": "Asia/Pontianak" }
+{ "city": "halmahera barat", "timezone": "Asia/Jayapura" }
+{ "city": "halmahera selatan", "timezone": "Asia/Jayapura" }
+{ "city": "halmahera tengah", "timezone": "Asia/Jayapura" }
+{ "city": "halmahera timur", "timezone": "Asia/Jayapura" }
+{ "city": "halmahera utara", "timezone": "Asia/Jayapura" }
+{ "city": "hulusungai selatan", "timezone": "Asia/Makassar" }
+{ "city": "hulusungai tengah", "timezone": "Asia/Makassar" }
+{ "city": "hulusungai utara", "timezone": "Asia/Makassar" }
+{ "city": "humbang hasundutan", "timezone": "Asia/Jakarta" }
+{ "city": "indragiri hilir", "timezone": "Asia/Jakarta" }
+{ "city": "indragiri hulu", "timezone": "Asia/Jakarta" }
+{ "city": "indramayu", "timezone": "Asia/Jakarta" }
+{ "city": "intan jaya", "timezone": "Asia/Jayapura" }
+{ "city": "jayapura", "timezone": "Asia/Jayapura" }
+{ "city": "jayawijaya", "timezone": "Asia/Jayapura" }
+{ "city": "jember", "timezone": "Asia/Jakarta" }
+{ "city": "jembrana", "timezone": "Asia/Makassar" }
+{ "city": "jeneponto", "timezone": "Asia/Makassar" }
+{ "city": "jepara", "timezone": "Asia/Jakarta" }
+{ "city": "jombang", "timezone": "Asia/Jakarta" }
+{ "city": "kaimana", "timezone": "Asia/Jayapura" }
+{ "city": "kampar", "timezone": "Asia/Jakarta" }
+{ "city": "kapuas", "timezone": "Asia/Pontianak" }
+{ "city": "kapuas hulu", "timezone": "Asia/Pontianak" }
+{ "city": "karanganyar", "timezone": "Asia/Jakarta" }
+{ "city": "karangasem", "timezone": "Asia/Makassar" }
+{ "city": "karawang", "timezone": "Asia/Jakarta" }
+{ "city": "karimun", "timezone": "Asia/Jakarta" }
+{ "city": "karo", "timezone": "Asia/Jakarta" }
+{ "city": "katingan", "timezone": "Asia/Pontianak" }
+{ "city": "kaur", "timezone": "Asia/Jakarta" }
+{ "city": "kayong utara", "timezone": "Asia/Pontianak" }
+{ "city": "kebumen", "timezone": "Asia/Jakarta" }
+{ "city": "kediri", "timezone": "Asia/Jakarta" }
+{ "city": "keerom", "timezone": "Asia/Jayapura" }
+{ "city": "kendal", "timezone": "Asia/Jakarta" }
+{ "city": "kepahiang", "timezone": "Asia/Jakarta" }
+{ "city": "kepulauan anambas", "timezone": "Asia/Jakarta" }
+{ "city": "kepulauan aru", "timezone": "Asia/Jayapura" }
+{ "city": "kepulauan mentawai", "timezone": "Asia/Jakarta" }
+{ "city": "kepulauan meranti", "timezone": "Asia/Jakarta" }
+{ "city": "kepulauan sangihe", "timezone": "Asia/Makassar" }
+{ "city": "kepulauan siau tagulandang biaro", "timezone": "Asia/Makassar" }
+{ "city": "kepulauan sula", "timezone": "Asia/Jayapura" }
+{ "city": "kepulauan talaud", "timezone": "Asia/Makassar" }
+{ "city": "kepulauan yapen", "timezone": "Asia/Jayapura" }
+{ "city": "kerinci", "timezone": "Asia/Jakarta" }
+{ "city": "ketapang", "timezone": "Asia/Jakarta" }
+{ "city": "klaten", "timezone": "Asia/Jakarta" }
+{ "city": "klungkung", "timezone": "Asia/Makassar" }
+{ "city": "kolaka", "timezone": "Asia/Makassar" }
+{ "city": "kolaka timur", "timezone": "Asia/Makassar" }
+{ "city": "kolaka utara", "timezone": "Asia/Makassar" }
+{ "city": "konawe", "timezone": "Asia/Makassar" }
+{ "city": "konawe kepulauan", "timezone": "Asia/Makassar" }
+{ "city": "konawe selatan", "timezone": "Asia/Makassar" }
+{ "city": "konawe utara", "timezone": "Asia/Makassar" }
+{ "city": "kota ambon", "timezone": "Asia/Jayapura" }
+{ "city": "kota balikpapan", "timezone": "Asia/Makassar" }
+{ "city": "kota banda aceh", "timezone": "Asia/Jakarta" }
+{ "city": "kota bandar lampung", "timezone": "Asia/Jakarta" }
+{ "city": "kota bandung", "timezone": "Asia/Jakarta" }
+{ "city": "kota banjar", "timezone": "Asia/Jakarta" }
+{ "city": "kota banjarbaru", "timezone": "Asia/Makassar" }
+{ "city": "kota banjarmasin", "timezone": "Asia/Makassar" }
+{ "city": "kota batam", "timezone": "Asia/Jakarta" }
+{ "city": "kota batu", "timezone": "Asia/Jakarta" }
+{ "city": "kota bau-bau", "timezone": "Asia/Makassar" }
+{ "city": "kota bekasi", "timezone": "Asia/Jakarta" }
+{ "city": "kota bengkulu", "timezone": "Asia/Jakarta" }
+{ "city": "kota bima", "timezone": "Asia/Makassar" }
+{ "city": "kota binjai", "timezone": "Asia/Jakarta" }
+{ "city": "kota bitung", "timezone": "Asia/Makassar" }
+{ "city": "kota blitar", "timezone": "Asia/Jakarta" }
+{ "city": "kota bogor", "timezone": "Asia/Jakarta" }
+{ "city": "kota bontang", "timezone": "Asia/Makassar" }
+{ "city": "kota bukittinggi", "timezone": "Asia/Jakarta" }
+{ "city": "kota cilegon", "timezone": "Asia/Jakarta" }
+{ "city": "kota cimahi", "timezone": "Asia/Jakarta" }
+{ "city": "kota cirebon", "timezone": "Asia/Jakarta" }
+{ "city": "kota denpasar", "timezone": "Asia/Makassar" }
+{ "city": "kota depok", "timezone": "Asia/Jakarta" }
+{ "city": "kota dumai", "timezone": "Asia/Jakarta" }
+{ "city": "kota gorontalo", "timezone": "Asia/Makassar" }
+{ "city": "kota gunung sitoli", "timezone": "Asia/Jakarta" }
+{ "city": "kota jakarta", "timezone": "Asia/Jakarta" }
+{ "city": "kota jambi", "timezone": "Asia/Jakarta" }
+{ "city": "kota jayapura", "timezone": "Asia/Jayapura" }
+{ "city": "kota kediri", "timezone": "Asia/Jakarta" }
+{ "city": "kota kendari", "timezone": "Asia/Makassar" }
+{ "city": "kota kotamobagu", "timezone": "Asia/Makassar" }
+{ "city": "kota kupang", "timezone": "Asia/Makassar" }
+{ "city": "kota langsa", "timezone": "Asia/Jakarta" }
+{ "city": "kota lhokseumawe", "timezone": "Asia/Jakarta" }
+{ "city": "kota lubuklinggau", "timezone": "Asia/Jakarta" }
+{ "city": "kota madiun", "timezone": "Asia/Jakarta" }
+{ "city": "kota magelang", "timezone": "Asia/Jakarta" }
+{ "city": "kota makassar", "timezone": "Asia/Makassar" }
+{ "city": "kota malang", "timezone": "Asia/Jakarta" }
+{ "city": "kota manado", "timezone": "Asia/Makassar" }
+{ "city": "kota mataram", "timezone": "Asia/Makassar" }
+{ "city": "kota medan", "timezone": "Asia/Jakarta" }
+{ "city": "kota metro", "timezone": "Asia/Jakarta" }
+{ "city": "kota mojokerto", "timezone": "Asia/Jakarta" }
+{ "city": "kota padang", "timezone": "Asia/Jakarta" }
+{ "city": "kota padangpanjang", "timezone": "Asia/Jakarta" }
+{ "city": "kota padangsidempuan", "timezone": "Asia/Jakarta" }
+{ "city": "kota pagaralam", "timezone": "Asia/Jakarta" }
+{ "city": "kota palangkaraya", "timezone": "Asia/Pontianak" }
+{ "city": "kota palembang", "timezone": "Asia/Jakarta" }
+{ "city": "kota palopo", "timezone": "Asia/Makassar" }
+{ "city": "kota palu", "timezone": "Asia/Makassar" }
+{ "city": "kota pangkalpinang", "timezone": "Asia/Jakarta" }
+{ "city": "kota pare-pare", "timezone": "Asia/Makassar" }
+{ "city": "kota pariaman", "timezone": "Asia/Jakarta" }
+{ "city": "kota pasuruan", "timezone": "Asia/Jakarta" }
+{ "city": "kota payakumbuh", "timezone": "Asia/Jakarta" }
+{ "city": "kota pekalongan", "timezone": "Asia/Jakarta" }
+{ "city": "kota pekanbaru", "timezone": "Asia/Jakarta" }
+{ "city": "kota pematangsiantar", "timezone": "Asia/Jakarta" }
+{ "city": "kota pontianak", "timezone": "Asia/Pontianak" }
+{ "city": "kota prabumulih", "timezone": "Asia/Jakarta" }
+{ "city": "kota probolinggo", "timezone": "Asia/Jakarta" }
+{ "city": "kota sabang", "timezone": "Asia/Jakarta" }
+{ "city": "kota salatiga", "timezone": "Asia/Jakarta" }
+{ "city": "kota samarinda", "timezone": "Asia/Makassar" }
+{ "city": "kota sawahlunto", "timezone": "Asia/Jakarta" }
+{ "city": "kota semarang", "timezone": "Asia/Jakarta" }
+{ "city": "kota serang", "timezone": "Asia/Jakarta" }
+{ "city": "kota sibolga", "timezone": "Asia/Jakarta" }
+{ "city": "kota singkawang", "timezone": "Asia/Pontianak" }
+{ "city": "kota solok", "timezone": "Asia/Jakarta" }
+{ "city": "kota sorong", "timezone": "Asia/Jayapura" }
+{ "city": "kota subulussalam", "timezone": "Asia/Jakarta" }
+{ "city": "kota sukabumi", "timezone": "Asia/Jakarta" }
+{ "city": "kota sungai penuh", "timezone": "Asia/Jakarta" }
+{ "city": "kota surabaya", "timezone": "Asia/Jakarta" }
+{ "city": "kota surakarta", "timezone": "Asia/Jakarta" }
+{ "city": "kota tangerang", "timezone": "Asia/Jakarta" }
+{ "city": "kota tangerang selatan", "timezone": "Asia/Jakarta" }
+{ "city": "kota tanjungbalai", "timezone": "Asia/Jakarta" }
+{ "city": "kota tanjungpinang", "timezone": "Asia/Jakarta" }
+{ "city": "kota tarakan", "timezone": "Asia/Makassar" }
+{ "city": "kota tasikmalaya", "timezone": "Asia/Jakarta" }
+{ "city": "kota tebingtinggi", "timezone": "Asia/Jakarta" }
+{ "city": "kota tegal", "timezone": "Asia/Jakarta" }
+{ "city": "kota ternate", "timezone": "Asia/Jayapura" }
+{ "city": "kota tidore", "timezone": "Asia/Jayapura" }
+{ "city": "kota tomohon", "timezone": "Asia/Makassar" }
+{ "city": "kota tual", "timezone": "Asia/Jayapura" }
+{ "city": "kota yogyakarta", "timezone": "Asia/Jakarta" }
+{ "city": "kotabaru", "timezone": "Asia/Makassar" }
+{ "city": "kotawaringin barat", "timezone": "Asia/Pontianak" }
+{ "city": "kotawaringin timur", "timezone": "Asia/Pontianak" }
+{ "city": "kuantan singingi", "timezone": "Asia/Jakarta" }
+{ "city": "kuburaya", "timezone": "Asia/Pontianak" }
+{ "city": "kudus", "timezone": "Asia/Jakarta" }
+{ "city": "kulonprogo", "timezone": "Asia/Jakarta" }
+{ "city": "kuningan", "timezone": "Asia/Jakarta" }
+{ "city": "kupang", "timezone": "Asia/Makassar" }
+{ "city": "kutai barat", "timezone": "Asia/Makassar" }
+{ "city": "kutai kartanegara", "timezone": "Asia/Makassar" }
+{ "city": "kutai timur", "timezone": "Asia/Makassar" }
+{ "city": "labuhanbatu", "timezone": "Asia/Jakarta" }
+{ "city": "labuhanbatu selatan", "timezone": "Asia/Jakarta" }
+{ "city": "labuhanbatu utara", "timezone": "Asia/Jakarta" }
+{ "city": "lahat", "timezone": "Asia/Manila" }
+{ "city": "lamandau", "timezone": "Asia/Pontianak" }
+{ "city": "lamongan", "timezone": "Asia/Jakarta" }
+{ "city": "lampung barat", "timezone": "Asia/Jakarta" }
+{ "city": "lampung selatan", "timezone": "Asia/Jakarta" }
+{ "city": "lampung tengah", "timezone": "Asia/Jakarta" }
+{ "city": "lampung timur", "timezone": "Asia/Jakarta" }
+{ "city": "lampung utara", "timezone": "Asia/Jakarta" }
+{ "city": "landak", "timezone": "Asia/Pontianak" }
+{ "city": "langkat", "timezone": "Asia/Jakarta" }
+{ "city": "lanny jaya", "timezone": "Asia/Jayapura" }
+{ "city": "lebak", "timezone": "Asia/Manila" }
+{ "city": "lebong", "timezone": "Asia/Kolkata" }
+{ "city": "lembata", "timezone": "Asia/Makassar" }
+{ "city": "limapuluhkoto", "timezone": "Asia/Jakarta" }
+{ "city": "lingga", "timezone": "Asia/Jakarta" }
+{ "city": "lombok barat", "timezone": "Asia/Makassar" }
+{ "city": "lombok tengah", "timezone": "Asia/Makassar" }
+{ "city": "lombok timur", "timezone": "Asia/Makassar" }
+{ "city": "lombok utara", "timezone": "Asia/Makassar" }
+{ "city": "lumajang", "timezone": "Asia/Jakarta" }
+{ "city": "luwu", "timezone": "Asia/Makassar" }
+{ "city": "luwu timur", "timezone": "Asia/Makassar" }
+{ "city": "luwu utara", "timezone": "Asia/Makassar" }
+{ "city": "madiun", "timezone": "Asia/Jakarta" }
+{ "city": "magelang", "timezone": "Asia/Jakarta" }
+{ "city": "magetan", "timezone": "Asia/Jakarta" }
+{ "city": "mahakam ulu", "timezone": "Asia/Makassar" }
+{ "city": "majalengka", "timezone": "Asia/Jakarta" }
+{ "city": "majene", "timezone": "Asia/Makassar" }
+{ "city": "malaka", "timezone": "Asia/Makassar" }
+{ "city": "malang", "timezone": "Asia/Jakarta" }
+{ "city": "malinau", "timezone": "Asia/Makassar" }
+{ "city": "maluku barat daya", "timezone": "Asia/Jayapura" }
+{ "city": "maluku tengah", "timezone": "Asia/Jayapura" }
+{ "city": "maluku tenggara", "timezone": "Asia/Jayapura" }
+{ "city": "maluku tenggara barat", "timezone": "Asia/Jayapura" }
+{ "city": "mamasa", "timezone": "Asia/Makassar" }
+{ "city": "mamberamo raya", "timezone": "Asia/Jayapura" }
+{ "city": "mamberamo tengah", "timezone": "Asia/Jayapura" }
+{ "city": "mamuju", "timezone": "Asia/Makassar" }
+{ "city": "mamuju tengah", "timezone": "Asia/Makassar" }
+{ "city": "mamuju utara", "timezone": "Asia/Makassar" }
+{ "city": "mandailing natal", "timezone": "Asia/Jakarta" }
+{ "city": "manggarai", "timezone": "Asia/Makassar" }
+{ "city": "manggarai barat", "timezone": "Asia/Makassar" }
+{ "city": "manggarai timur", "timezone": "Asia/Makassar" }
+{ "city": "manokwari", "timezone": "Asia/Jayapura" }
+{ "city": "manokwari selatan", "timezone": "Asia/Jayapura" }
+{ "city": "mappi", "timezone": "Asia/Jayapura" }
+{ "city": "maros", "timezone": "Asia/Makassar" }
+{ "city": "maybrat", "timezone": "Asia/Jayapura" }
+{ "city": "melawi", "timezone": "Asia/Pontianak" }
+{ "city": "merangin", "timezone": "Asia/Jakarta" }
+{ "city": "merauke", "timezone": "Asia/Jayapura" }
+{ "city": "mesuji", "timezone": "Asia/Jakarta" }
+{ "city": "mimika", "timezone": "Asia/Jayapura" }
+{ "city": "minahasa", "timezone": "Asia/Makassar" }
+{ "city": "minahasa selatan", "timezone": "Asia/Makassar" }
+{ "city": "minahasa tenggara", "timezone": "Asia/Makassar" }
+{ "city": "minahasa utara", "timezone": "Asia/Makassar" }
+{ "city": "mojokerto", "timezone": "Asia/Jakarta" }
+{ "city": "morowali", "timezone": "Asia/Makassar" }
+{ "city": "morowali utara", "timezone": "Asia/Makassar" }
+{ "city": "muaraenim", "timezone": "Asia/Jakarta" }
+{ "city": "muarojambi", "timezone": "Asia/Jakarta" }
+{ "city": "muko-muko", "timezone": "Asia/Jakarta" }
+{ "city": "muna", "timezone": "Asia/Makassar" }
+{ "city": "murungraya", "timezone": "Asia/Pontianak" }
+{ "city": "musibanyuasin", "timezone": "Asia/Jakarta" }
+{ "city": "musirawas", "timezone": "Asia/Jakarta" }
+{ "city": "nabire", "timezone": "Asia/Jayapura" }
+{ "city": "naganraya", "timezone": "Asia/Jakarta" }
+{ "city": "nagekeo", "timezone": "Asia/Makassar" }
+{ "city": "natuna", "timezone": "Asia/Jakarta" }
+{ "city": "nduga", "timezone": "Asia/Jayapura" }
+{ "city": "ngada", "timezone": "Asia/Makassar" }
+{ "city": "nganjuk", "timezone": "Asia/Jakarta" }
+{ "city": "ngawi", "timezone": "Asia/Jakarta" }
+{ "city": "nias", "timezone": "Asia/Jakarta" }
+{ "city": "nias barat", "timezone": "Asia/Jakarta" }
+{ "city": "nias selatan", "timezone": "Asia/Jakarta" }
+{ "city": "nias utara", "timezone": "Asia/Jakarta" }
+{ "city": "nunukan", "timezone": "Asia/Makassar" }
+{ "city": "ogan ilir", "timezone": "Asia/Jakarta" }
+{ "city": "ogan komering ilir", "timezone": "Asia/Jakarta" }
+{ "city": "ogan komering ulu", "timezone": "Asia/Jakarta" }
+{ "city": "ogan komering ulu selatan", "timezone": "Asia/Jakarta" }
+{ "city": "ogan komering ulu timur", "timezone": "Asia/Jakarta" }
+{ "city": "pacitan", "timezone": "Asia/Jakarta" }
+{ "city": "padang lawas", "timezone": "Asia/Jakarta" }
+{ "city": "padang lawas utara", "timezone": "Asia/Jakarta" }
+{ "city": "padangpariaman", "timezone": "Asia/Jakarta" }
+{ "city": "pakpakbharat", "timezone": "Asia/Jakarta" }
+{ "city": "pamekasan", "timezone": "Asia/Jakarta" }
+{ "city": "pandeglang", "timezone": "Asia/Jakarta" }
+{ "city": "pangandaran", "timezone": "Asia/Jakarta" }
+{ "city": "pangkajene kepulauan", "timezone": "Asia/Makassar" }
+{ "city": "paniai", "timezone": "Asia/Jayapura" }
+{ "city": "parigimoutong", "timezone": "Asia/Makassar" }
+{ "city": "pasaman", "timezone": "Asia/Jakarta" }
+{ "city": "pasaman barat", "timezone": "Asia/Jakarta" }
+{ "city": "paser", "timezone": "Asia/Jakarta" }
+{ "city": "pasuruan", "timezone": "Asia/Jakarta" }
+{ "city": "pati", "timezone": "Asia/Jakarta" }
+{ "city": "pegunungan arfak", "timezone": "Asia/Jayapura" }
+{ "city": "pegunungan bintang", "timezone": "Asia/Jayapura" }
+{ "city": "pekajang kab. lingga", "timezone": "Asia/Jakarta" }
+{ "city": "pekalongan", "timezone": "Asia/Jakarta" }
+{ "city": "pelalawan", "timezone": "Asia/Jakarta" }
+{ "city": "pemalang", "timezone": "Asia/Jakarta" }
+{ "city": "penajam paser utara", "timezone": "Asia/Makassar" }
+{ "city": "penukal abab lematang ilir", "timezone": "Asia/Jakarta" }
+{ "city": "pesawaran", "timezone": "Asia/Jakarta" }
+{ "city": "pesisir barat", "timezone": "Asia/Jakarta" }
+{ "city": "pesisir selatan", "timezone": "Asia/Jakarta" }
+{ "city": "pidie", "timezone": "Asia/Jakarta" }
+{ "city": "pidie jaya", "timezone": "Asia/Jakarta" }
+{ "city": "pinrang", "timezone": "Asia/Makassar" }
+{ "city": "pohuwato", "timezone": "Asia/Makassar" }
+{ "city": "polewali mandar", "timezone": "Asia/Makassar" }
+{ "city": "ponorogo", "timezone": "Asia/Jakarta" }
+{ "city": "pontianak", "timezone": "Asia/Jakarta" }
+{ "city": "poso", "timezone": "Asia/Makassar" }
+{ "city": "pringsewu", "timezone": "Asia/Jakarta" }
+{ "city": "probolinggo", "timezone": "Asia/Jakarta" }
+{ "city": "pulangpisau", "timezone": "Asia/Pontianak" }
+{ "city": "pulau laut kab. natuna", "timezone": "Asia/Jakarta" }
+{ "city": "pulau midai kab. natuna", "timezone": "Asia/Jakarta" }
+{ "city": "pulau morotai", "timezone": "Asia/Jayapura" }
+{ "city": "pulau serasan kab. natuna", "timezone": "Asia/Jakarta" }
+{ "city": "pulau taliabu", "timezone": "Asia/Jayapura" }
+{ "city": "pulau tambelan kab. bintan", "timezone": "Asia/Jakarta" }
+{ "city": "puncak", "timezone": "Asia/Jakarta" }
+{ "city": "puncakjaya", "timezone": "Asia/Jayapura" }
+{ "city": "purbalingga", "timezone": "Asia/Jakarta" }
+{ "city": "purwakarta", "timezone": "Asia/Jakarta" }
+{ "city": "purworejo", "timezone": "Asia/Jakarta" }
+{ "city": "rajaampat", "timezone": "Asia/Jayapura" }
+{ "city": "rejanglebong", "timezone": "Asia/Jakarta" }
+{ "city": "rembang", "timezone": "Asia/Jakarta" }
+{ "city": "rokan hilir", "timezone": "Asia/Jakarta" }
+{ "city": "rokan hulu", "timezone": "Asia/Jakarta" }
+{ "city": "rote ndao", "timezone": "Asia/Makassar" }
+{ "city": "saburaijua", "timezone": "Asia/Makassar" }
+{ "city": "sambas", "timezone": "Asia/Jakarta" }
+{ "city": "samosir", "timezone": "Asia/Jakarta" }
+{ "city": "sampang", "timezone": "Asia/Jakarta" }
+{ "city": "sanggau", "timezone": "Asia/Jakarta" }
+{ "city": "sarmi", "timezone": "Asia/Jayapura" }
+{ "city": "sarolangun", "timezone": "Asia/Jakarta" }
+{ "city": "sawahlunto sijunjung", "timezone": "Asia/Jakarta" }
+{ "city": "sekadau", "timezone": "Asia/Pontianak" }
+{ "city": "selayar", "timezone": "Asia/Makassar" }
+{ "city": "seluma", "timezone": "Asia/Jakarta" }
+{ "city": "semarang", "timezone": "Asia/Jakarta" }
+{ "city": "seram bagian barat", "timezone": "Asia/Jayapura" }
+{ "city": "seram bagian timur", "timezone": "Asia/Jayapura" }
+{ "city": "serang", "timezone": "Asia/Jakarta" }
+{ "city": "serdang bedagai", "timezone": "Asia/Jakarta" }
+{ "city": "seruyan", "timezone": "Asia/Pontianak" }
+{ "city": "siak", "timezone": "Asia/Jakarta" }
+{ "city": "sidenrengrappang", "timezone": "Asia/Makassar" }
+{ "city": "sidoarjo", "timezone": "Asia/Jakarta" }
+{ "city": "sigi", "timezone": "Asia/Makassar" }
+{ "city": "sikka", "timezone": "Asia/Makassar" }
+{ "city": "simalungun", "timezone": "Asia/Jakarta" }
+{ "city": "simeulue", "timezone": "Asia/Jakarta" }
+{ "city": "sinjai", "timezone": "Asia/Makassar" }
+{ "city": "sintang", "timezone": "Asia/Pontianak" }
+{ "city": "situbondo", "timezone": "Asia/Jakarta" }
+{ "city": "sleman", "timezone": "Asia/Jakarta" }
+{ "city": "solok", "timezone": "Asia/Jakarta" }
+{ "city": "solok selatan", "timezone": "Asia/Jakarta" }
+{ "city": "soppeng", "timezone": "Asia/Makassar" }
+{ "city": "sorong", "timezone": "Asia/Jayapura" }
+{ "city": "sorong selatan", "timezone": "Asia/Jayapura" }
+{ "city": "sragen", "timezone": "Asia/Jakarta" }
+{ "city": "subang", "timezone": "Asia/Kuala_Lumpur" }
+{ "city": "sukabumi", "timezone": "Asia/Jakarta" }
+{ "city": "sukamara", "timezone": "Asia/Jakarta" }
+{ "city": "sukoharjo", "timezone": "Asia/Jakarta" }
+{ "city": "sumba barat", "timezone": "Asia/Makassar" }
+{ "city": "sumba barat daya", "timezone": "Asia/Makassar" }
+{ "city": "sumba tengah", "timezone": "Asia/Makassar" }
+{ "city": "sumba timur", "timezone": "Asia/Makassar" }
+{ "city": "sumbawa", "timezone": "Asia/Makassar" }
+{ "city": "sumbawa barat", "timezone": "Asia/Makassar" }
+{ "city": "sumedang", "timezone": "Asia/Jakarta" }
+{ "city": "sumenep", "timezone": "Asia/Jakarta" }
+{ "city": "supiori", "timezone": "Asia/Jayapura" }
+{ "city": "tabalong", "timezone": "Asia/Makassar" }
+{ "city": "tabanan", "timezone": "Asia/Makassar" }
+{ "city": "takalar", "timezone": "Asia/Makassar" }
+{ "city": "tambrauw", "timezone": "Asia/Jayapura" }
+{ "city": "tana tidung", "timezone": "Asia/Makassar" }
+{ "city": "tanahbumbu", "timezone": "Asia/Makassar" }
+{ "city": "tanahdatar", "timezone": "Asia/Jakarta" }
+{ "city": "tanahlaut", "timezone": "Asia/Makassar" }
+{ "city": "tanatoraja", "timezone": "Asia/Makassar" }
+{ "city": "tangerang", "timezone": "Asia/Jakarta" }
+{ "city": "tanggamus", "timezone": "Asia/Jakarta" }
+{ "city": "tanjungjabung barat", "timezone": "Asia/Jakarta" }
+{ "city": "tanjungjabung timur", "timezone": "Asia/Jakarta" }
+{ "city": "tapanuli selatan", "timezone": "Asia/Jakarta" }
+{ "city": "tapanuli tengah", "timezone": "Asia/Jakarta" }
+{ "city": "tapanuli utara", "timezone": "Asia/Jakarta" }
+{ "city": "tapin", "timezone": "Asia/Makassar" }
+{ "city": "tasikmalaya", "timezone": "Asia/Jakarta" }
+{ "city": "tebo", "timezone": "Asia/Jakarta" }
+{ "city": "tegal", "timezone": "Asia/Jakarta" }
+{ "city": "telukbintuni", "timezone": "Asia/Jayapura" }
+{ "city": "telukwondama", "timezone": "Asia/Jayapura" }
+{ "city": "temanggung", "timezone": "Asia/Jakarta" }
+{ "city": "timor tengah selatan", "timezone": "Asia/Makassar" }
+{ "city": "timor tengah utara", "timezone": "Asia/Makassar" }
+{ "city": "tobasamosir", "timezone": "Asia/Jakarta" }
+{ "city": "tojounauna", "timezone": "Asia/Makassar" }
+{ "city": "tolikara", "timezone": "Asia/Jayapura" }
+{ "city": "tolitoli", "timezone": "Asia/Makassar" }
+{ "city": "toraja utara", "timezone": "Asia/Makassar" }
+{ "city": "trenggalek", "timezone": "Asia/Jakarta" }
+{ "city": "tuban", "timezone": "Asia/Jakarta" }
+{ "city": "tulangbawang", "timezone": "Asia/Jakarta" }
+{ "city": "tulangbawang barat", "timezone": "Asia/Jakarta" }
+{ "city": "tulungagung", "timezone": "Asia/Jakarta" }
+{ "city": "wajo", "timezone": "Asia/Makassar" }
+{ "city": "wakatobi", "timezone": "Asia/Makassar" }
+{ "city": "waropen", "timezone": "Asia/Jayapura" }
+{ "city": "waykanan", "timezone": "Asia/Jakarta" }
+{ "city": "wonogiri", "timezone": "Asia/Jakarta" }
+{ "city": "wonosobo", "timezone": "Asia/Jakarta" }
+{ "city": "yahukimo", "timezone": "Asia/Jayapura" }
+{ "city": "yalimo", "timezone": "Asia/Jayapura" }
+{ "city": "yapen waropen", "timezone": "Asia/Jayapura" }

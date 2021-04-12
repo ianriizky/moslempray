@@ -17,14 +17,15 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "illuminate/http": "^8.36",
-        "spatie/data-transfer-object": "^2.8",
-        "illuminate/support": "^8.36"
+        "php": "^7.1",
+        "illuminate/support": "^5.8",
+        "spatie/data-transfer-object": "^1.13",
+        "o2system/curl": "^2.1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5",
+        "phpunit/phpunit": "^7.5",
         "filp/whoops": "^2.12",
-        "symfony/var-dumper": "^5.2"
+        "symfony/var-dumper": "^4.4"
     },
     "autoload": {
         "psr-4": {
