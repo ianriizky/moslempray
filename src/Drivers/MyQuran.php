@@ -12,7 +12,6 @@ use Ianrizky\MoslemPray\Support\Curl\Response;
 use Ianrizky\MoslemPray\Support\ParseDate;
 
 /**
- * @see https://api.myquran.com
  * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS
  */
 class MyQuran extends AbstractDriver
