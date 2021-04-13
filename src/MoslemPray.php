@@ -2,11 +2,11 @@
 
 namespace Ianrizky\MoslemPray;
 
-use DomainException;
 use Ianrizky\MoslemPray\Drivers\AbstractDriver;
 use Ianrizky\MoslemPray\Drivers\MyQuran;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Traits\ForwardsCalls;
+use InvalidArgumentException;
 
 /**
  * @method static \Ianrizky\MoslemPray\Drivers\MyQuran myquran(array $config = []) Create an instance of the PrayerTimes driver.
@@ -65,14 +65,14 @@ class MoslemPray
      * @param  array  $config
      * @return string
      *
-     * @throws \DomainException
+     * @throws \InvalidArgumentException
      */
     protected function getDriverNameFromConfig(array $config): string
     {
         $driverName = $config['driver'] ?? null;
 
         if (!static::isDriverAvailable($driverName)) {
-            throw new DomainException('Driver name is unidentified');
+            throw new InvalidArgumentException('Driver name is unidentified');
         }
 
         return $driverName;
@@ -95,16 +95,18 @@ class MoslemPray
      * @param  string  $driverName
      * @param  array  $config
      * @return \Ianrizky\MoslemPray\Drivers\AbstractDriver
+     *
+     * @throws \InvalidArgumentException
      */
     public static function createDriverInstance(string $driverName, array $config = []): AbstractDriver
     {
-        if (!static::isDriverAvailable($driverName)) {
-            $driverName = static::$defaultDriverName;
+        if (static::isDriverAvailable($driverName)) {
+            $driver = static::DRIVERS[$driverName];
+
+            return new $driver($config);
         }
 
-        $driver = static::DRIVERS[$driverName];
-
-        return new $driver($config);
+        throw new InvalidArgumentException("Driver [$driverName] is not supported.");
     }
 
     /**

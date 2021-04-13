@@ -3,6 +3,7 @@
 namespace Ianrizky\MoslemPray\Drivers;
 
 use Exception;
+use Ianrizky\MoslemPray\Contracts\Response\HasPrayerTime;
 use Ianrizky\MoslemPray\Response\MyQuran\City;
 use Ianrizky\MoslemPray\Response\MyQuran\Collection\CityCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\Collection\PrayerTimeCollection;
@@ -109,7 +110,7 @@ class MyQuran extends AbstractDriver
      * @see https://api.myquran.com/v1/sholat/jadwal/{city_id}/{year}/{month}/{date}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#534da562-3335-4a1f-bca2-d7ee2266f457 (Sholat/Jadwal/Per Hari)
      */
-    public function getPrayerTime($city, $date = null)
+    public function getPrayerTime($city, $date = null): HasPrayerTime
     {
         $city = $this->getCity($city);
         $date = $this->parseDate($date);
@@ -171,12 +172,7 @@ class MyQuran extends AbstractDriver
     }
 
     /**
-     * Throw a HttpClientException exception if the given json status is error.
-     *
-     * @param  \Ianrizky\MoslemPray\Support\Curl\Response  $response
-     * @return \Ianrizky\MoslemPray\Support\Curl\Response
-     *
-     * @throws \Exception
+     * {@inheritDoc}
      */
     protected function throwJsonError(Response $response): Response
     {

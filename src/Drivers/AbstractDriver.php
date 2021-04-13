@@ -4,6 +4,7 @@ namespace Ianrizky\MoslemPray\Drivers;
 
 use Ianrizky\MoslemPray\Contracts\Driverable;
 use Ianrizky\MoslemPray\Support\Curl\Request;
+use Ianrizky\MoslemPray\Support\Curl\Response;
 use InvalidArgumentException;
 use O2System\Kernel\Http\Message\Uri;
 
@@ -107,4 +108,14 @@ abstract class AbstractDriver implements Driverable
             }
         }
     }
+
+    /**
+     * Throw a Exception exception if the given json status is error.
+     *
+     * @param  \Ianrizky\MoslemPray\Support\Curl\Response  $response
+     * @return \Ianrizky\MoslemPray\Support\Curl\Response
+     *
+     * @throws \Exception
+     */
+    abstract protected function throwJsonError(Response $response);
 }

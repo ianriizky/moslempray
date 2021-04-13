@@ -13,5 +13,5 @@ interface Driverable
      * @param  \Illuminate\Support\Carbon|string|null  $date
      * @return \Ianrizky\MoslemPray\Contracts\Response\HasPrayerTime
      */
-    public function getPrayerTime($city, $date = null);
+    public function getPrayerTime($city, $date = null): HasPrayerTime;
 }
