@@ -26,7 +26,7 @@ class MyQuran extends AbstractDriver
      * @var array
      */
     protected $config = [
-        'uri' => 'https://api.myquran.com/v1/',
+        'url' => 'https://api.myquran.com/v1/',
     ];
 
     /**
