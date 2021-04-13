@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature;
+namespace Ianrizky\MoslemPray\Tests\Feature;
 
 use Exception;
 use Ianrizky\MoslemPray\MoslemPray;
@@ -11,8 +11,8 @@ use Ianrizky\MoslemPray\Response\MyQuran\Collection\TafsirCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\Coordinate;
 use Ianrizky\MoslemPray\Response\MyQuran\PrayerTime;
 use Ianrizky\MoslemPray\Response\MyQuran\Tafsir;
+use Ianrizky\MoslemPray\Tests\TestCase;
 use Illuminate\Support\Carbon;
-use Tests\TestCase;
 
 class MyQuranTest extends TestCase
 {

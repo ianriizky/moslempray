@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests;
+namespace Ianrizky\MoslemPray\Tests;
 
 use PHPUnit\Framework\TestCase as BaseTestCase;
 
