@@ -48,6 +48,7 @@ class MyQuran extends AbstractDriver
      * @param  string  $name
      * @return \Ianrizky\MoslemPray\Response\MyQuran\City
      *
+     * @see https://api.myquran.com/v1/sholat/kota/cari/{name}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#ae4b237c-e97c-4353-9e94-67d155af06f8 (Sholat/Lokasi/Pencarian)
      */
     public function getCityFromName(string $name): City
@@ -67,6 +68,7 @@ class MyQuran extends AbstractDriver
      * @param  mixed  $id
      * @return \Ianrizky\MoslemPray\Response\MyQuran\City
      *
+     * @see https://api.myquran.com/v1/sholat/kota/id/{id}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#88549bc5-cd70-4ba1-b565-f3eef882e060 (Sholat/Lokasi/ID Kota)
      */
     public function getCityFromId($id): City
@@ -85,6 +87,7 @@ class MyQuran extends AbstractDriver
      *
      * @return \Ianrizky\MoslemPray\Response\MyQuran\Collection\CityCollection
      *
+     * @see https://api.myquran.com/v1/sholat/kota/semua
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#145bcb30-dba6-4d24-9799-03ba878b5476 (Sholat/Lokasi/Semua Kota)
      */
     public function getCities(): CityCollection
@@ -103,6 +106,7 @@ class MyQuran extends AbstractDriver
     /**
      * {@inheritDoc}
      *
+     * @see https://api.myquran.com/v1/sholat/jadwal/{city_id}/{year}/{month}/{date}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#534da562-3335-4a1f-bca2-d7ee2266f457 (Sholat/Jadwal/Per Hari)
      */
     public function getPrayerTime($city, $date = null)
@@ -127,6 +131,7 @@ class MyQuran extends AbstractDriver
      * @param  int|null  $month
      * @return \Ianrizky\MoslemPray\Response\MyQuran\Collection\PrayerTimeCollection
      *
+     * @see https://api.myquran.com/v1/sholat/jadwal/{city_id}/{year}/{month}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#b0b39104-8216-49fc-9d3b-ea53e5832e16 (Sholat/Jadwal/Per Bulan)
      */
     public function getPrayerTimePerMonth($city, $year = null, int $month = null): PrayerTimeCollection
@@ -153,6 +158,9 @@ class MyQuran extends AbstractDriver
      *
      * @param  int  $ayat
      * @return mixed
+     *
+     * @see https://api.myquran.com/v1/tafsir/quran/kemenag/id/{id}
+     * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#9065c3f0-23b7-48b6-884a-a28da0826e03 (Tafsir/alQuran/Kemenag/id)
      */
     public function getTafsir(int $ayat)
     {
