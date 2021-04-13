@@ -22,7 +22,7 @@ abstract class AbstractDriver implements Driverable
      * @var array
      */
     protected $basicConfig = [
-        'timeout' => 2,
+        'timeout' => 2000, // in milliseconds
     ];
 
     /**
@@ -72,7 +72,11 @@ abstract class AbstractDriver implements Driverable
      */
     protected function createHttpInstance()
     {
-        $this->http = Request::make()->setTimeout($this->config['timeout']);
+        $this->http = Request::make();
+
+        if ($config = $this->config['timeout']) {
+            $this->http->setTimeout($config, true);
+        }
     }
 
     /**
@@ -100,10 +104,6 @@ abstract class AbstractDriver implements Driverable
         foreach ($keys as $key) {
             if (!array_key_exists($key, $this->config)) {
                 throw new InvalidArgumentException($key . ' is not available.');
-            }
-
-            if (is_null($this->config[$key])) {
-                throw new InvalidArgumentException($key . ' is empty.');
             }
         }
     }
