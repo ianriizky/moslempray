@@ -3,61 +3,41 @@
 namespace Ianrizky\MoslemPray\Response\MyQuran;
 
 use Ianrizky\MoslemPray\Contracts\Response\HasPrayerTime;
-use Ianrizky\MoslemPray\Support\Curl\Response;
 use Ianrizky\MoslemPray\Support\Timezone;
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Carbon;
 use Spatie\DataTransferObject\DataTransferObject;
 
 class PrayerTime extends DataTransferObject implements HasPrayerTime
 {
-    /**
-     * @var \Ianrizky\MoslemPray\Response\MyQuran\City
-     */
+    /** @var \Ianrizky\MoslemPray\Response\MyQuran\City */
     public $city;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $date;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $imsak;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $subuh;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $terbit;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $dhuha;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $dzuhur;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $ashar;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $maghrib;
 
-    /**
-     * @var \Illuminate\Support\Carbon
-     */
+    /** @var \Illuminate\Support\Carbon */
     public $isya;
 
     /**
@@ -96,7 +76,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getImsak()
+    public function getImsak(): Carbon
     {
         return $this->imsak;
     }
@@ -104,7 +84,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getSubuh()
+    public function getSubuh(): Carbon
     {
         return $this->subuh;
     }
@@ -112,7 +92,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getSunrise()
+    public function getSunrise(): Carbon
     {
         return $this->terbit;
     }
@@ -120,7 +100,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getDhuha()
+    public function getDhuha(): Carbon
     {
         return $this->dhuha;
     }
@@ -128,7 +108,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getDzuhur()
+    public function getDzuhur(): Carbon
     {
         return $this->dzuhur;
     }
@@ -136,7 +116,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getAshar()
+    public function getAshar(): Carbon
     {
         return $this->ashar;
     }
@@ -144,7 +124,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getMaghrib()
+    public function getMaghrib(): Carbon
     {
         return $this->maghrib;
     }
@@ -152,7 +132,7 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
     /**
      * {@inheritDoc}
      */
-    public function getIsya()
+    public function getIsya(): Carbon
     {
         return $this->isya;
     }

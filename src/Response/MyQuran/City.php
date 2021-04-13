@@ -9,7 +9,7 @@ class City extends DataTransferObject
     public $id;
 
     /**
-     * Alias: koordinat
+     * Alias: koordinat.
      *
      * @var \Ianrizky\MoslemPray\Response\MyQuran\Coordinate|null
      */

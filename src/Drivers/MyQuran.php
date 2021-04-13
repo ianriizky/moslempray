@@ -4,13 +4,14 @@ namespace Ianrizky\MoslemPray\Drivers;
 
 use Exception;
 use Ianrizky\MoslemPray\Contracts\Response\HasPrayerTime;
+use Ianrizky\MoslemPray\Contracts\Response\HasPrayerTimeCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\City;
 use Ianrizky\MoslemPray\Response\MyQuran\Collection\CityCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\Collection\PrayerTimeCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\Collection\TafsirCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\PrayerTime;
-use Ianrizky\MoslemPray\Support\Curl\Response;
 use Ianrizky\MoslemPray\Support\ParseDate;
+use Illuminate\Http\Client\Response;
 
 /**
  * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS
@@ -44,26 +45,6 @@ class MyQuran extends AbstractDriver
     }
 
     /**
-     * Return city information based on the given name.
-     *
-     * @param  string  $name
-     * @return \Ianrizky\MoslemPray\Response\MyQuran\City
-     *
-     * @see https://api.myquran.com/v1/sholat/kota/cari/{name}
-     * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#ae4b237c-e97c-4353-9e94-67d155af06f8 (Sholat/Lokasi/Pencarian)
-     */
-    public function getCityFromName(string $name): City
-    {
-        $uri = $this->uri->addPath('/sholat/kota/cari/' . $name);
-        $response = $this->throwJsonError($this->http->setUri($uri)->get());
-
-        return new City([
-            'id' => $response->json('data.0.id'),
-            'name' => $response->json('data.0.lokasi'),
-        ]);
-    }
-
-    /**
      * Return city information based on the given id.
      *
      * @param  mixed  $id
@@ -74,12 +55,34 @@ class MyQuran extends AbstractDriver
      */
     public function getCityFromId($id): City
     {
-        $uri = $this->uri->addPath('/sholat/kota/id/' . $id);
-        $response = $this->throwJsonError($this->http->setUri($uri)->get());
+        $response = $this->throwJsonError(
+            $this->request->get('/sholat/kota/id/' . $id)
+        );
 
         return new City([
             'id' => $response->json('data.id'),
             'name' => $response->json('data.lokasi'),
+        ]);
+    }
+
+    /**
+     * Return city information based on the given name.
+     *
+     * @param  string  $name
+     * @return \Ianrizky\MoslemPray\Response\MyQuran\City
+     *
+     * @see https://api.myquran.com/v1/sholat/kota/cari/{name}
+     * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#ae4b237c-e97c-4353-9e94-67d155af06f8 (Sholat/Lokasi/Pencarian)
+     */
+    public function getCityFromName(string $name): City
+    {
+        $response = $this->throwJsonError(
+            $this->request->get('/sholat/kota/cari/' . $name)
+        );
+
+        return new City([
+            'id' => $response->json('data.0.id'),
+            'name' => $response->json('data.0.lokasi'),
         ]);
     }
 
@@ -93,8 +96,9 @@ class MyQuran extends AbstractDriver
      */
     public function getCities(): CityCollection
     {
-        $uri = $this->uri->addPath('/sholat/kota/semua');
-        $response = $this->throwJsonError($this->http->setUri($uri)->get());
+        $response = $this->throwJsonError(
+            $this->request->get('/sholat/kota/semua')
+        );
 
         return new CityCollection(array_map(function ($data) {
             return [
@@ -115,27 +119,20 @@ class MyQuran extends AbstractDriver
         $city = $this->getCity($city);
         $date = $this->parseDate($date);
 
-        $uri = $this->uri->addPath(sprintf('/sholat/jadwal/%s/%s',
-            $city->id, $date->format('Y/m/d')
-        ));
-
-        return PrayerTime::fromResponse(
-            $this->throwJsonError($this->http->setUri($uri)->get())
+        $response = $this->throwJsonError(
+            $this->request->get(sprintf('/sholat/jadwal/%s/%s', $city->id, $date->format('Y/m/d')))
         );
+
+        return PrayerTime::fromResponse($response);
     }
 
     /**
-     * Return list of prayer time based on the given city and month.
-     *
-     * @param  mixed  $city
-     * @param  \Illuminate\Support\Carbon|int|null  $year
-     * @param  int|null  $month
-     * @return \Ianrizky\MoslemPray\Response\MyQuran\Collection\PrayerTimeCollection
+     * {@inheritDoc}
      *
      * @see https://api.myquran.com/v1/sholat/jadwal/{city_id}/{year}/{month}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#b0b39104-8216-49fc-9d3b-ea53e5832e16 (Sholat/Jadwal/Per Bulan)
      */
-    public function getPrayerTimePerMonth($city, $year = null, int $month = null): PrayerTimeCollection
+    public function getPrayerTimePerMonth($city, $year = null, int $month = null): HasPrayerTimeCollection
     {
         $city = $this->getCity($city);
 
@@ -145,13 +142,11 @@ class MyQuran extends AbstractDriver
             $date = $this->parseDate($year);
         }
 
-        $uri = $this->uri->addPath(sprintf('/sholat/jadwal/%s/%s',
-            $city->id, $date->format('Y/m')
-        ));
-
-        return PrayerTimeCollection::fromResponse(
-            $this->throwJsonError($this->http->setUri($uri)->get())
+        $response = $this->throwJsonError(
+            $this->request->get(sprintf('/sholat/jadwal/%s/%s', $city->id, $date->format('Y/m')))
         );
+
+        return PrayerTimeCollection::fromResponse($response);
     }
 
     /**
@@ -165,8 +160,9 @@ class MyQuran extends AbstractDriver
      */
     public function getTafsir(int $ayat)
     {
-        $uri = $this->uri->addPath('/tafsir/quran/kemenag/id/' . $ayat);
-        $response = $this->throwJsonError($this->http->setUri($uri)->get());
+        $response = $this->throwJsonError(
+            $this->request->get('/tafsir/quran/kemenag/id/' . $ayat)
+        );
 
         return TafsirCollection::fromResponse($response);
     }

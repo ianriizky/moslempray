@@ -2,7 +2,6 @@
 
 namespace Ianrizky\MoslemPray\Contracts\Response;
 
-use Ianrizky\MoslemPray\Contracts\Responsable;
 use Illuminate\Support\Carbon;
 
 interface HasPrayerTime extends Responsable
@@ -12,61 +11,61 @@ interface HasPrayerTime extends Responsable
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getImsak();
+    public function getImsak(): Carbon;
 
     /**
      * Return "subuh" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getSubuh();
+    public function getSubuh(): Carbon;
 
     /**
      * Return "sunrise" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getSunrise();
+    public function getSunrise(): Carbon;
 
     /**
      * Return "dhuha" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getDhuha();
+    public function getDhuha(): Carbon;
 
     /**
      * Return "dzuhur" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getDzuhur();
+    public function getDzuhur(): Carbon;
 
     /**
      * Return "ashar" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getAshar();
+    public function getAshar(): Carbon;
 
     /**
      * Return "maghrib" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getMaghrib();
+    public function getMaghrib(): Carbon;
 
     /**
      * Return "isya" attribute value.
      *
      * @return \Illuminate\Support\Carbon
      */
-    public function getIsya();
+    public function getIsya(): Carbon;
 
     /**
      * Get the collection of attribute as a plain array.
      *
      * @return array
      */
-    public function toArray();
+    public function toArray(): array;
 }

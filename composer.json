@@ -17,15 +17,17 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "php": "^7.1",
-        "illuminate/support": "^5.8",
+        "php": "^7.3",
+        "guzzlehttp/guzzle": "^7.3",
+        "illuminate/http": "^8.36",
+        "illuminate/support": "^8.36",
         "spatie/data-transfer-object": "^1.13",
-        "o2system/curl": "^2.1"
+        "spatie/enum": "^2.3"
     },
     "require-dev": {
-        "phpunit/phpunit": "^7.5",
         "filp/whoops": "^2.12",
-        "symfony/var-dumper": "^4.4"
+        "phpunit/phpunit": "^9.5",
+        "symfony/var-dumper": "^5.2"
     },
     "autoload": {
         "psr-4": {

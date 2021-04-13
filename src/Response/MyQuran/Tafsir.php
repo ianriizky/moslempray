@@ -6,9 +6,7 @@ use Spatie\DataTransferObject\DataTransferObject;
 
 class Tafsir extends DataTransferObject
 {
-    /**
-     * Alias: tafsir_id.
-     */
+    /** Alias: tafsir_id. */
     public $id;
 
     /**
@@ -32,18 +30,12 @@ class Tafsir extends DataTransferObject
      */
     public $ayat_number;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     public $mufasir;
 
-    /**
-     * @var string
-     */
+    /** @var string */
     public $text;
 
-    /**
-     * @var string|null
-     */
+    /** @var string|null */
     public $html;
 }

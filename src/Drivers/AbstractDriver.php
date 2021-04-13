@@ -3,10 +3,10 @@
 namespace Ianrizky\MoslemPray\Drivers;
 
 use Ianrizky\MoslemPray\Contracts\Driverable;
-use Ianrizky\MoslemPray\Support\Curl\Request;
-use Ianrizky\MoslemPray\Support\Curl\Response;
+use Illuminate\Http\Client\Factory;
+use Illuminate\Http\Client\PendingRequest;
+use Illuminate\Http\Client\Response;
 use InvalidArgumentException;
-use O2System\Kernel\Http\Message\Uri;
 
 abstract class AbstractDriver implements Driverable
 {
@@ -27,18 +27,11 @@ abstract class AbstractDriver implements Driverable
     ];
 
     /**
-     * O2System\Curl\Request instance.
+     * Illuminate\Http\Client\PendingRequest instance.
      *
-     * @var \Ianrizky\MoslemPray\Support\Curl\Request
+     * @var \Illuminate\Http\Client\PendingRequest
      */
-    protected $http;
-
-    /**
-     * O2System\Kernel\Http\Message\Uri instance.
-     *
-     * @var \O2System\Kernel\Http\Message\Uri
-     */
-    protected $uri;
+    protected $request;
 
     /**
      * Create a new instance class.
@@ -49,10 +42,9 @@ abstract class AbstractDriver implements Driverable
     public function __construct(array $config = [])
     {
         $this->mergeConfig($config);
-        $this->checkConfig('uri', 'timeout');
+        $this->checkConfig('url', 'timeout');
 
         $this->createHttpInstance();
-        $this->createUriInstance();
     }
 
     /**
@@ -67,27 +59,19 @@ abstract class AbstractDriver implements Driverable
     }
 
     /**
-     * Create O2System\Curl\Request instance.
+     * Create Illuminate\Http\Client\PendingRequest instance.
      *
      * @return void
      */
     protected function createHttpInstance()
     {
-        $this->http = Request::make();
+        $this->request = tap(new PendingRequest(new Factory), function (PendingRequest $request) {
+            $request->baseUrl($this->config['url']);
 
-        if ($config = $this->config['timeout']) {
-            $this->http->setTimeout($config, true);
-        }
-    }
-
-    /**
-     * Create O2System\Kernel\Http\Message\Uri instance.
-     *
-     * @return void
-     */
-    protected function createUriInstance()
-    {
-        $this->uri = new Uri($this->config['uri']);
+            transform($this->config['timeout'], function ($timeout) use ($request) {
+                $request->timeout($timeout, true);
+            });
+        });
     }
 
     /**
@@ -112,10 +96,10 @@ abstract class AbstractDriver implements Driverable
     /**
      * Throw a Exception exception if the given json status is error.
      *
-     * @param  \Ianrizky\MoslemPray\Support\Curl\Response  $response
-     * @return \Ianrizky\MoslemPray\Support\Curl\Response
+     * @param  \Illuminate\Http\Client\Response  $response
+     * @return \Illuminate\Http\Client\Response
      *
      * @throws \Exception
      */
-    abstract protected function throwJsonError(Response $response);
+    abstract protected function throwJsonError(Response $response): Response;
 }

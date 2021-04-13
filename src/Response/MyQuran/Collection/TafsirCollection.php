@@ -2,9 +2,9 @@
 
 namespace Ianrizky\MoslemPray\Response\MyQuran\Collection;
 
-use Ianrizky\MoslemPray\Contracts\Responsable;
+use Ianrizky\MoslemPray\Contracts\Response\Responsable;
 use Ianrizky\MoslemPray\Response\MyQuran\Tafsir;
-use Ianrizky\MoslemPray\Support\Curl\Response;
+use Illuminate\Http\Client\Response;
 use Spatie\DataTransferObject\DataTransferObjectCollection;
 
 /**

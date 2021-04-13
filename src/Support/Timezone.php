@@ -2,39 +2,25 @@
 
 namespace Ianrizky\MoslemPray\Support;
 
-use Illuminate\Support\Collection;
+use Illuminate\Support\LazyCollection;
 use Illuminate\Support\Str;
 
 class Timezone
 {
-
-    /**
-     * Collection cache.
-     *
-     * @var \Illuminate\Support\Collection
-     */
-    protected static $cache;
-
     /**
      * Return collection of city with its timezone value.
      *
-     * @return \Illuminate\Support\Collection
+     * @return \Illuminate\Support\LazyCollection
      */
-    public static function collection(): Collection
+    public static function collection(): LazyCollection
     {
-        if (!is_null(static::$cache)) {
-            return static::$cache;
-        }
+        return LazyCollection::make(function () {
+            $handle = fopen('storage/timezone.ndjson', 'r');
 
-        $collection = [];
-
-        $handle = fopen('storage/timezone.ndjson', 'r');
-
-        while (($line = fgets($handle)) !== false) {
-            $collection[] = json_decode($line, true);
-        }
-
-        return static::$cache = Collection::make($collection);
+            while (($line = fgets($handle)) !== false) {
+                yield json_decode($line, true);
+            }
+        });
     }
 
     /**

@@ -1,15 +1,15 @@
 <?php
 
-namespace Ianrizky\MoslemPray\Contracts;
+namespace Ianrizky\MoslemPray\Contracts\Response;
 
-use Ianrizky\MoslemPray\Support\Curl\Response;
+use Illuminate\Http\Client\Response;
 
 interface Responsable
 {
     /**
      * Create a new instance class from the given response.
      *
-     * @param  \Ianrizky\MoslemPray\Support\Curl\Response  $response
+     * @param  \Illuminate\Http\Client\Response  $response
      * @return static
      */
     public static function fromResponse(Response $response);

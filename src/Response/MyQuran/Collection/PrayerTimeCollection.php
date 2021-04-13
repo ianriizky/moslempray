@@ -2,17 +2,17 @@
 
 namespace Ianrizky\MoslemPray\Response\MyQuran\Collection;
 
-use Ianrizky\MoslemPray\Contracts\Responsable;
+use Ianrizky\MoslemPray\Contracts\Response\HasPrayerTimeCollection;
 use Ianrizky\MoslemPray\Response\MyQuran\PrayerTime;
-use Ianrizky\MoslemPray\Support\Curl\Response;
 use Ianrizky\MoslemPray\Support\Timezone;
+use Illuminate\Http\Client\Response;
 use Illuminate\Support\Carbon;
 use Spatie\DataTransferObject\DataTransferObjectCollection;
 
 /**
  * @method \Ianrizky\MoslemPray\Response\MyQuran\PrayerTime current()
  */
-class PrayerTimeCollection extends DataTransferObjectCollection implements Responsable
+class PrayerTimeCollection extends DataTransferObjectCollection implements HasPrayerTimeCollection
 {
     /**
      * Create a new instance class.
