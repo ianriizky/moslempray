@@ -45,31 +45,31 @@ class PrayerTime extends DataTransferObject implements HasPrayerTime
      */
     public static function fromResponse(Response $response)
     {
-        $city = $response->json('data.lokasi');
+        $city = data_get($response->json(), 'data.lokasi');
         $timezone = Timezone::getTimezone($city, 'Asia/Jakarta');
-        $date = Carbon::parse($response->json('data.jadwal.date'), $timezone);
+        $date = Carbon::parse(data_get($response->json(), 'data.jadwal.date'), $timezone);
 
         return new static([
             'city' => [
-                'id' => $response->json('data.id'),
+                'id' => data_get($response->json(), 'data.id'),
                 'coordinate' => [
-                    'latitude' => $response->json('data.koordinat.lat'),
-                    'longitude' => $response->json('data.koordinat.lon'),
-                    'latitude_degree' => $response->json('data.koordinat.lintang'),
-                    'longitude_degree' => $response->json('data.koordinat.bujur'),
+                    'latitude' => data_get($response->json(), 'data.koordinat.lat'),
+                    'longitude' => data_get($response->json(), 'data.koordinat.lon'),
+                    'latitude_degree' => data_get($response->json(), 'data.koordinat.lintang'),
+                    'longitude_degree' => data_get($response->json(), 'data.koordinat.bujur'),
                 ],
                 'name' => $city,
-                'region' => $response->json('data.daerah'),
+                'region' => data_get($response->json(), 'data.daerah'),
             ],
             'date' => $date,
-            'imsak' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.imsak')),
-            'subuh' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.subuh')),
-            'terbit' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.terbit')),
-            'dhuha' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.dhuha')),
-            'dzuhur' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.dzuhur')),
-            'ashar' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.ashar')),
-            'maghrib' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.maghrib')),
-            'isya' => $date->copy()->setTimeFromTimeString($response->json('data.jadwal.isya')),
+            'imsak' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.imsak')),
+            'subuh' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.subuh')),
+            'terbit' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.terbit')),
+            'dhuha' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.dhuha')),
+            'dzuhur' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.dzuhur')),
+            'ashar' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.ashar')),
+            'maghrib' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.maghrib')),
+            'isya' => $date->copy()->setTimeFromTimeString(data_get($response->json(), 'data.jadwal.isya')),
         ]);
     }
 

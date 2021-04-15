@@ -32,7 +32,7 @@ class PrayerTimeCollection extends DataTransferObjectCollection implements HasPr
      */
     public static function fromResponse(Response $response)
     {
-        $city = $response->json('data.lokasi');
+        $city = data_get($response->json(), 'data.lokasi');
         $timezone = Timezone::getTimezone($city, 'Asia/Jakarta');
 
         return new static(array_map(function ($entity) use ($response, $city, $timezone) {
@@ -40,15 +40,15 @@ class PrayerTimeCollection extends DataTransferObjectCollection implements HasPr
 
             return [
                 'city' => [
-                    'id' => $response->json('data.id'),
+                    'id' => data_get($response->json(), 'data.id'),
                     'coordinate' => [
-                        'latitude' => $response->json('data.koordinat.lat'),
-                        'longitude' => $response->json('data.koordinat.lon'),
-                        'latitude_degree' => $response->json('data.koordinat.lintang'),
-                        'longitude_degree' => $response->json('data.koordinat.bujur'),
+                        'latitude' => data_get($response->json(), 'data.koordinat.lat'),
+                        'longitude' => data_get($response->json(), 'data.koordinat.lon'),
+                        'latitude_degree' => data_get($response->json(), 'data.koordinat.lintang'),
+                        'longitude_degree' => data_get($response->json(), 'data.koordinat.bujur'),
                     ],
                     'name' => $city,
-                    'region' => $response->json('data.daerah'),
+                    'region' => data_get($response->json(), 'data.daerah'),
                 ],
                 'date' => $date,
                 'imsak' => $date->copy()->setTimeFromTimeString($entity['imsak']),
@@ -60,7 +60,7 @@ class PrayerTimeCollection extends DataTransferObjectCollection implements HasPr
                 'maghrib' => $date->copy()->setTimeFromTimeString($entity['maghrib']),
                 'isya' => $date->copy()->setTimeFromTimeString($entity['isya']),
             ];
-        }, $response->json('data.jadwal')));
+        }, data_get($response->json(), 'data.jadwal')));
     }
 }
 

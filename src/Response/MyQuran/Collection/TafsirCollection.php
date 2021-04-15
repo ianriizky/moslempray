@@ -27,6 +27,6 @@ class TafsirCollection extends DataTransferObjectCollection implements Responsab
                 'text' => $entity['text'],
                 'html' => $entity['html'] ?? null,
             ]);
-        }, $response->json('data')));
+        }, data_get($response->json(), 'data', [])));
     }
 }
