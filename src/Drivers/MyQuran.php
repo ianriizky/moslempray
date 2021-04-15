@@ -60,8 +60,8 @@ class MyQuran extends AbstractDriver
         );
 
         return new City([
-            'id' => $response->json('data.id'),
-            'name' => $response->json('data.lokasi'),
+            'id' => data_get($response->json(), 'data.id'),
+            'name' => data_get($response->json(), 'data.lokasi'),
         ]);
     }
 
@@ -81,8 +81,8 @@ class MyQuran extends AbstractDriver
         );
 
         return new City([
-            'id' => $response->json('data.0.id'),
-            'name' => $response->json('data.0.lokasi'),
+            'id' => data_get($response->json(), 'data.0.id'),
+            'name' => data_get($response->json(), 'data.0.lokasi'),
         ]);
     }
 
@@ -176,8 +176,8 @@ class MyQuran extends AbstractDriver
      */
     protected function throwJsonError(Response $response): Response
     {
-        $status = $response->json('status', true);
-        $message = $response->json('message', 'MyQuran API error');
+        $status = data_get($response->json(), 'status', true);
+        $message = data_get($response->json(), 'message', 'MyQuran API error');
 
         if (!$status) {
             throw new Exception($message);
