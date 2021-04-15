@@ -15,7 +15,7 @@ class Timezone
     public static function collection(): LazyCollection
     {
         return LazyCollection::make(function () {
-            $handle = fopen('storage/timezone.ndjson', 'r');
+            $handle = fopen(__DIR__ . '/../../storage/timezone.ndjson', 'r');
 
             while (($line = fgets($handle)) !== false) {
                 yield json_decode($line, true);
