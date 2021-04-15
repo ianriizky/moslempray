@@ -38,5 +38,15 @@
         "psr-4": {
             "Ianrizky\\MoslemPray\\Tests\\": "tests/"
         }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ianrizky\\MoslemPray\\ServiceProvider"
+            ],
+            "aliases": {
+                "MoslemPray": "Ianrizky\\MoslemPray\\Facades\\MoslemPray"
+            }
+        }
     }
 }
