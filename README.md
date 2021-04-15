@@ -11,7 +11,7 @@ There are 3 driver that available to use so far:
 - prayertimes [(documentation 1)](https://prayertimes.date/api) [(doucumentation 2)](https://waktusholat.org/api/docs/today)
 
 ## Software requirements
-- PHP version >= 7.1
+- PHP version ^7.3
 
 ## Instalation
 You can install the package via composer:
