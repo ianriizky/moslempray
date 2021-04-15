@@ -111,6 +111,8 @@ class MyQuran extends AbstractDriver
     /**
      * {@inheritDoc}
      *
+     * @return \Ianrizky\MoslemPray\Response\MyQuran\PrayerTime
+     *
      * @see https://api.myquran.com/v1/sholat/jadwal/{city_id}/{year}/{month}/{date}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#534da562-3335-4a1f-bca2-d7ee2266f457 (Sholat/Jadwal/Per Hari)
      */
@@ -128,6 +130,8 @@ class MyQuran extends AbstractDriver
 
     /**
      * {@inheritDoc}
+     *
+     * @return \Ianrizky\MoslemPray\Response\MyQuran\Collection\PrayerTimeCollection
      *
      * @see https://api.myquran.com/v1/sholat/jadwal/{city_id}/{year}/{month}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#b0b39104-8216-49fc-9d3b-ea53e5832e16 (Sholat/Jadwal/Per Bulan)
@@ -153,12 +157,12 @@ class MyQuran extends AbstractDriver
      * Return list of tafsir based on the given ayat number.
      *
      * @param  int  $ayat
-     * @return mixed
+     * @return \Ianrizky\MoslemPray\Response\MyQuran\Collection\TafsirCollection
      *
      * @see https://api.myquran.com/v1/tafsir/quran/kemenag/id/{id}
      * @see https://documenter.getpostman.com/view/841292/Tz5p7yHS#9065c3f0-23b7-48b6-884a-a28da0826e03 (Tafsir/alQuran/Kemenag/id)
      */
-    public function getTafsir(int $ayat)
+    public function getTafsir(int $ayat): TafsirCollection
     {
         $response = $this->throwJsonError(
             $this->request->get('/tafsir/quran/kemenag/id/' . $ayat)
