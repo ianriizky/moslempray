@@ -16,6 +16,19 @@
         "php"
     ],
     "minimum-stability": "stable",
+    "require": {
+        "php": "^7.3",
+        "guzzlehttp/guzzle": ">=5.0",
+        "illuminate/http": ">=7.0",
+        "illuminate/support": ">=7.0",
+        "spatie/data-transfer-object": "^1.0",
+        "spatie/enum": "^2.0"
+    },
+    "require-dev": {
+        "filp/whoops": ">=1.0",
+        "phpunit/phpunit": ">7.0",
+        "symfony/var-dumper": ">=2.0"
+    },
     "autoload": {
         "psr-4": {
             "Ianrizky\\MoslemPray\\": "src/"
@@ -23,7 +36,17 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Ianrizky\\MoslemPray\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ianrizky\\MoslemPray\\ServiceProvider"
+            ],
+            "aliases": {
+                "MoslemPray": "Ianrizky\\MoslemPray\\Facades\\MoslemPray"
+            }
         }
     }
 }
