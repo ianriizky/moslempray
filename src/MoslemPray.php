@@ -84,10 +84,10 @@ class MoslemPray
     /**
      * Determine whether the given driver name is available or not.
      *
-     * @param  string  $name
+     * @param  string|null  $name
      * @return bool
      */
-    public static function isDriverAvailable(string $name): bool
+    public static function isDriverAvailable(?string $name): bool
     {
         return in_array($name, array_keys(static::DRIVERS), true);
     }
