@@ -1,6 +1,6 @@
 # ianriizky-moslempray
 
-[![Build Status](https://travis-ci.org/ianriizky/moslempray.svg)](https://travis-ci.org/ianriizky/moslempray)
+[![Build Status](https://travis-ci.com/ianriizky/moslempray.svg)](https://travis-ci.org/ianriizky/moslempray)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ianriizky/moslempray.svg?style=flat)](https://scrutinizer-ci.com/g/ianriizky/moslempray)
 [![Code Coverage](https://scrutinizer-ci.com/g/ianriizky/moslempray/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/ianriizky/moslempray)
 [![Latest Stable Version](https://poser.pugx.org/ianriizky/moslempray/v/stable.svg)](https://packagist.org/packages/ianriizky/moslempray)
