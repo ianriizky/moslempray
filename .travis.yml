@@ -1,5 +1,10 @@
 language: php
 
+os:
+  - linux
+
+dist: xenial
+
 php:
   - 7.3
 
@@ -13,5 +18,3 @@ script:
 after_script:
   - if [ -e coverage.clover ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
   - if [ -e coverage.clover ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
-
-sudo: false
