@@ -56,4 +56,5 @@ checks:
     spacing_of_function_arguments: true
 
 tools:
-  external_code_coverage: true
+  external_code_coverage:
+    timeout: 3600
