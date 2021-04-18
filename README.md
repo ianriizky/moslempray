@@ -10,9 +10,9 @@
 **moslempray** is a API Manager to find pray time for Moslem developed for PHP and Laravel Framework.
 
 There are 3 driver that available to use so far:
-- aladhan [(documentation)](https://aladhan.com/prayer-times-api) ***still WIP***
-- myquran [(documentation)](https://documenter.getpostman.com/view/841292/Tz5p7yHS)
-- prayertimes [(documentation 1)](https://prayertimes.date/api) [(doucumentation 2)](https://waktusholat.org/api/docs/today) ***still WIP***
+- [ ] aladhan [(documentation)](https://aladhan.com/prayer-times-api) ***still WIP***
+- [x] myquran [(documentation)](https://documenter.getpostman.com/view/841292/Tz5p7yHS)
+- [ ] prayertimes [(documentation 1)](https://prayertimes.date/api) [(doucumentation 2)](https://waktusholat.org/api/docs/today) ***still WIP***
 
 ## Software requirements
 - PHP version ^7.3
