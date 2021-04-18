@@ -1,0 +1,24 @@
+language: php
+
+os:
+  - linux
+
+dist: xenial
+
+php:
+  - 7.3.27
+
+env:
+  global:
+    - XDEBUG_MODE=coverage
+
+before_script:
+  - composer self-update
+  - composer install --prefer-source --no-interaction
+
+script:
+  - vendor/bin/phpunit --coverage-clover=coverage.clover
+
+after_script:
+  - if [ -e coverage.clover ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
+  - if [ -e coverage.clover ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi

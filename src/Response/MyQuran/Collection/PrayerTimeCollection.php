@@ -60,7 +60,7 @@ class PrayerTimeCollection extends DataTransferObjectCollection implements HasPr
                 'maghrib' => $date->copy()->setTimeFromTimeString($entity['maghrib']),
                 'isya' => $date->copy()->setTimeFromTimeString($entity['isya']),
             ];
-        }, data_get($response->json(), 'data.jadwal')));
+        }, data_get($response->json(), 'data.jadwal', [])));
     }
 }
 
