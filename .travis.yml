@@ -8,6 +8,10 @@ dist: xenial
 php:
   - 7.3.27
 
+env:
+  global:
+    - XDEBUG_MODE=coverage
+
 before_script:
   - composer self-update
   - composer install --prefer-source --no-interaction
