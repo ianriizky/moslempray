@@ -8,17 +8,13 @@ dist: xenial
 php:
   - 7.3.27
 
-env:
-  global:
-    - XDEBUG_MODE=coverage
-
-before_script:
-  - composer self-update --2
-  - composer install --prefer-source --no-interaction
+install:
+  - curl -s http://getcomposer.org/installer | php
+  - php composer.phar install --dev --no-interaction
 
 script:
-  - vendor/bin/phpunit --coverage-clover=coverage.clover
+  - mkdir -p build/logs
+  - php vendor/bin/phpunit
 
-after_script:
-  - if [ -e coverage.clover ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
-  - if [ -e coverage.clover ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
+after_success:
+  - travis_retry php vendor/bin/php-coveralls
