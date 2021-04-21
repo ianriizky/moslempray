@@ -12,13 +12,15 @@ env:
   global:
     - XDEBUG_MODE=coverage
 
-before_script:
-  - composer self-update
-  - composer install --prefer-source --no-interaction
+install:
+  - composer install --no-interaction
+  - composer require --dev php-coveralls/php-coveralls
 
 script:
-  - vendor/bin/phpunit --coverage-clover=coverage.clover
+  - mkdir -p build/logs
+  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml
 
-after_script:
-  - if [ -e coverage.clover ]; then wget https://scrutinizer-ci.com/ocular.phar; fi
-  - if [ -e coverage.clover ]; then php ocular.phar code-coverage:upload --format=php-clover coverage.clover; fi
+after_success:
+  - travis_retry php vendor/bin/php-coveralls
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
