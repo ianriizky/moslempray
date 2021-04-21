@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/ianriizky/moslempray.svg)](https://travis-ci.org/ianriizky/moslempray)
 [![Quality Score](https://img.shields.io/scrutinizer/g/ianriizky/moslempray.svg?style=flat)](https://scrutinizer-ci.com/g/ianriizky/moslempray)
-[![Coverage Status](https://coveralls.io/repos/github/ianriizky/moslempray/badge.svg?branch=feature/v1.x)](https://coveralls.io/github/ianriizky/moslempray?branch=feature/v1.x)
+[![Coverage Status](https://coveralls.io/repos/github/ianriizky/moslempray/badge.svg)](https://coveralls.io/github/ianriizky/moslempray)
 [![Latest Stable Version](https://poser.pugx.org/ianriizky/moslempray/v/stable.svg)](https://packagist.org/packages/ianriizky/moslempray)
 [![Total Downloads](https://poser.pugx.org/ianriizky/moslempray/d/total.svg)](https://packagist.org/packages/ianriizky/moslempray)
 [![Software License](https://poser.pugx.org/ianriizky/moslempray/license.svg)](https://packagist.org/packages/ianriizky/moslempray)
