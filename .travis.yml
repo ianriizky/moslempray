@@ -17,7 +17,8 @@ install:
   - composer require --dev php-coveralls/php-coveralls
 
 script:
-  - vendor/bin/phpunit --coverage-clover coverage.clover
+  - mkdir -p build/logs
+  - vendor/bin/phpunit --coverage-clover build/logs/clover.xml coverage.clover
 
 after_success:
   - travis_retry php vendor/bin/php-coveralls
