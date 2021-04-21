@@ -14,6 +14,7 @@ env:
 
 install:
   - composer install --no-interaction
+  - composer require --dev php-coveralls/php-coveralls
 
 script:
   - mkdir -p build/logs
